@@ -47,6 +47,8 @@ struct Login: View {
                     
                 })
                 .hSpacing(.trailing)
+                //MARK: Desible Untill Datta Is Not Enterd In
+                .disableWithOpacity(emailId.isEmpty || password.isEmpty)
                 
             }.padding(.top, 20)
             
