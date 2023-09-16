@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Login: View {
+    @Binding var showSignup: Bool
     //MARK:  View Property
     
     @State private var emailId: String = ""
@@ -56,7 +57,7 @@ struct Login: View {
                 Text("Don't have an account?")
                     .foregroundStyle(.gray)
                 Button("Signup", action: {
-                    
+                    showSignup.toggle()
                 })
                 .fontWeight(.bold)
                 .tint(.accentColor)
@@ -74,6 +75,6 @@ struct Login: View {
 
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
-        Login()
+        ContentView()
     }
 }
