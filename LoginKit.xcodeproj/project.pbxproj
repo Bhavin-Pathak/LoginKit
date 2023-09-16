@@ -16,6 +16,8 @@
 		09AA03E32AB5AB1800BB54D3 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA03E22AB5AB1800BB54D3 /* CustomTF.swift */; };
 		09AA03E52AB5B6A300BB54D3 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA03E42AB5B6A300BB54D3 /* GradientButton.swift */; };
 		09AA03E72AB60E0700BB54D3 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA03E62AB60E0700BB54D3 /* Signup.swift */; };
+		09AA03E92AB613CB00BB54D3 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA03E82AB613CB00BB54D3 /* ForgotPassword.swift */; };
+		09AA03EB2AB619FD00BB54D3 /* PasswordReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA03EA2AB619FD00BB54D3 /* PasswordReset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		09AA03E22AB5AB1800BB54D3 /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
 		09AA03E42AB5B6A300BB54D3 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		09AA03E62AB60E0700BB54D3 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		09AA03E82AB613CB00BB54D3 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		09AA03EA2AB619FD00BB54D3 /* PasswordReset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordReset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			children = (
 				09AA03DC2AB5A4CC00BB54D3 /* Login.swift */,
 				09AA03E62AB60E0700BB54D3 /* Signup.swift */,
+				09AA03E82AB613CB00BB54D3 /* ForgotPassword.swift */,
+				09AA03EA2AB619FD00BB54D3 /* PasswordReset.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,7 +186,9 @@
 			files = (
 				09AA03E72AB60E0700BB54D3 /* Signup.swift in Sources */,
 				09AA03DD2AB5A4CC00BB54D3 /* Login.swift in Sources */,
+				09AA03EB2AB619FD00BB54D3 /* PasswordReset.swift in Sources */,
 				09AA03E52AB5B6A300BB54D3 /* GradientButton.swift in Sources */,
+				09AA03E92AB613CB00BB54D3 /* ForgotPassword.swift in Sources */,
 				09AA03CF2AB5A35100BB54D3 /* ContentView.swift in Sources */,
 				09AA03CD2AB5A35100BB54D3 /* LoginKitApp.swift in Sources */,
 				09AA03E32AB5AB1800BB54D3 /* CustomTF.swift in Sources */,

@@ -13,7 +13,9 @@ struct Login: View {
     
     @State private var emailId: String = ""
     @State private var password: String = ""
-    
+    @State private var showForgotPassword: Bool = false
+    //MARK: Show reset view with conformactions
+    @State private var showResetView: Bool = false
     var body: some View {
         //MARK: Login Text
         VStack(alignment: .leading, spacing: 15){
@@ -36,7 +38,7 @@ struct Login: View {
                     .padding(.top, 5)
                 
                 Button("Forgot password?", action: {
-                    
+                    showForgotPassword.toggle()
                 }).font(.callout)
                     .fontWeight(.heavy)
                     .tint(.accentColor)
@@ -71,6 +73,27 @@ struct Login: View {
         .padding(.vertical ,15)
         .padding(.horizontal, 25)
         .toolbar(.hidden, for: .navigationBar)
+        //MARK: Asking Email-iid for reset link send
+        .sheet(isPresented: $showForgotPassword, content: {
+            if #available(iOS 16.4, *){
+                ForgotPassword(showResetView: $showResetView)
+                    .presentationDetents([.height(300)])
+                    .presentationCornerRadius(30)
+            }else{
+                ForgotPassword(showResetView: $showResetView)
+                    .presentationDetents([.height(300)])
+            }
+        })
+        .sheet(isPresented: $showResetView, content: {
+            if #available(iOS 16.4, *){
+                PasswordReset()
+                    .presentationDetents([.height(350)])
+                    .presentationCornerRadius(30)
+            }else{
+                PasswordReset()
+                    .presentationDetents([.height(350)])
+            }
+        })
         //MARK: Stack End Here
     }
 }
