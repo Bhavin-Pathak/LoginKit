@@ -14,6 +14,7 @@
 		09AA03DD2AB5A4CC00BB54D3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA03DC2AB5A4CC00BB54D3 /* Login.swift */; };
 		09AA03E02AB5A75B00BB54D3 /* View+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA03DF2AB5A75B00BB54D3 /* View+Extentions.swift */; };
 		09AA03E32AB5AB1800BB54D3 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA03E22AB5AB1800BB54D3 /* CustomTF.swift */; };
+		09AA03E52AB5B6A300BB54D3 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA03E42AB5B6A300BB54D3 /* GradientButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		09AA03DC2AB5A4CC00BB54D3 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		09AA03DF2AB5A75B00BB54D3 /* View+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extentions.swift"; sourceTree = "<group>"; };
 		09AA03E22AB5AB1800BB54D3 /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
+		09AA03E42AB5B6A300BB54D3 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				09AA03E22AB5AB1800BB54D3 /* CustomTF.swift */,
+				09AA03E42AB5B6A300BB54D3 /* GradientButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09AA03DD2AB5A4CC00BB54D3 /* Login.swift in Sources */,
+				09AA03E52AB5B6A300BB54D3 /* GradientButton.swift in Sources */,
 				09AA03CF2AB5A35100BB54D3 /* ContentView.swift in Sources */,
 				09AA03CD2AB5A35100BB54D3 /* LoginKitApp.swift in Sources */,
 				09AA03E32AB5AB1800BB54D3 /* CustomTF.swift in Sources */,
