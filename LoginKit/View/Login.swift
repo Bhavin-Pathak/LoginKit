@@ -16,6 +16,9 @@ struct Login: View {
     @State private var showForgotPassword: Bool = false
     //MARK: Show reset view with conformactions
     @State private var showResetView: Bool = false
+    //MARK: Opectional if you want otp verification at login screen
+    @State private var askOTP: Bool = false
+    @State private var otpText: String = ""
     var body: some View {
         //MARK: Login Text
         VStack(alignment: .leading, spacing: 15){
@@ -46,7 +49,8 @@ struct Login: View {
                 
                 //MARK: LoginButton
                 GradientButton(titel: "Login", icon: "arrow.right", onClick: {
-                    
+                    //MARK: Login Page code logic here
+                    askOTP.toggle()
                 })
                 .hSpacing(.trailing)
                 //MARK: Desible Untill Datta Is Not Enterd In
@@ -84,6 +88,7 @@ struct Login: View {
                     .presentationDetents([.height(300)])
             }
         })
+        //MARK: Reset Password
         .sheet(isPresented: $showResetView, content: {
             if #available(iOS 16.4, *){
                 PasswordReset()
@@ -94,6 +99,18 @@ struct Login: View {
                     .presentationDetents([.height(350)])
             }
         })
+        //MARK: OTP Verification Prompt
+        .sheet(isPresented: $askOTP, content: {
+            if #available(iOS 16.4, *){
+                OTPView(otpText: $otpText)
+                    .presentationDetents([.height(350)])
+                    .presentationCornerRadius(30)
+            }else{
+                OTPView(otpText: $otpText)
+                    .presentationDetents([.height(350)])
+            }
+        })
+        
         //MARK: Stack End Here
     }
 }
